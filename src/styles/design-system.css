@@ -1,0 +1,270 @@
+/* 
+  STEPHEN CHRISTOPHER SITE DESIGN SYSTEM
+  A cohesive set of styles to be used across all pages
+*/
+
+/* 
+  TYPOGRAPHY 
+*/
+:root {
+  --font-primary: 'Atkinson Hyperlegible', Arial, sans-serif;
+  --font-size-base: 1.2rem;
+  --line-height-base: 1.6;
+  
+  /* Font sizes */
+  --font-size-xs: 0.95rem;
+  --font-size-sm: 1.05rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.8rem;
+  
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Colors - explicitly defined */
+  --brand-neutral: #333333;
+  --brand-sage: #6B8E23;
+  --brand-coral: #FF9776;
+  --brand-peach: #FFBCAB;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-background: #ffffff;
+  --color-background-alt: #fafafa;
+  --color-border: #e3e3e3;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 5rem;
+  
+  /* Border radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 999px;
+}
+
+/* 
+  PAGE LAYOUTS 
+*/
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing-xxl) var(--spacing-md);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+}
+
+.page-title {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-normal);
+  color: var(--brand-sage);
+  margin-bottom: var(--spacing-xl);
+  letter-spacing: -0.01em;
+}
+
+.section-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--brand-neutral);
+  margin-bottom: var(--spacing-md);
+}
+
+.subsection-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--brand-sage);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* 
+  BUTTONS 
+*/
+.btn {
+  display: inline-block;
+  padding: 0.45em 1.1em;
+  min-width: 120px;
+  background: #FFBCAB; /* Peach */
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-size: 1.18rem;
+  font-family: var(--font-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 10px 0 rgba(60,60,60,0.06);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #FF9776; /* Deeper peach for hover */
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(60,60,60,0.11);
+  text-decoration: none;
+  outline: 2px solid #FF9776;
+  outline-offset: 2px;
+}
+
+/* 
+  CARDS 
+*/
+.card {
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 8px 0 rgba(60,60,60,0.06);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.card-alt {
+  background: var(--color-background-alt);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 8px 0 rgba(60,60,60,0.06);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 3px solid #FFBCAB;
+}
+
+/* 
+  TESTIMONIALS 
+*/
+.testimonial-card {
+  background: var(--color-background-alt);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 8px 0 rgba(60,60,60,0.06);
+  padding: var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid #FFBCAB;
+  margin-bottom: var(--spacing-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px 0 rgba(60,60,60,0.1);
+}
+
+.testimonial-card blockquote {
+  font-style: italic;
+  margin: 0 0 var(--spacing-sm) 0;
+  line-height: 1.7;
+}
+
+.testimonial-card figcaption {
+  font-size: var(--font-size-xs);
+  color: var(--brand-coral);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--spacing-xs);
+  text-align: right;
+}
+
+/* 
+  LOGOS 
+*/
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 900px;
+  margin: var(--spacing-xl) auto;
+  padding: var(--spacing-lg) 0;
+}
+
+.logo-img {
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* 
+  GRID LAYOUTS 
+*/
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 0 4rem;
+  align-items: start;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.grid-1col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+/* 
+  RESPONSIVE ADJUSTMENTS 
+*/
+@media (max-width: 900px) {
+  .page-container {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+  
+  .page-title {
+    font-size: 2.4rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .grid-2col,
+  .grid-3col {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg) 0;
+  }
+  
+  .logo-container {
+    gap: var(--spacing-md);
+  }
+  
+  .logo-img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --font-size-md: 1.1rem;
+    --font-size-lg: 1.3rem;
+    --font-size-xl: 1.7rem;
+    --font-size-xxl: 2.2rem;
+  }
+  
+  .page-container {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+}
