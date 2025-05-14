@@ -16,12 +16,12 @@ import { Accordion, AccordionItem } from 'accessible-astro-components'
       </h2>
       <div style="height:1px; background:linear-gradient(90deg,var(--brand-sage) 10%,var(--brand-primary) 50%,var(--brand-peach) 90%); border-radius:1px; margin-bottom:2.7rem; width:100%; max-width:600px; opacity:0.25;"></div>
       <div class="academic-highlights-grid grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <a href="/teaching" class="feature-link" aria-label="Go to Teaching page">
+        <a href="{import.meta.env.BASE_URL}teaching" class="feature-link" aria-label="Go to Teaching page">
   <Feature class="academic-feature-card" icon="lucide:book-open" title="Teaching" color="var(--brand-sage)">
     Courses taught at 9 universities worldwide, specializing in anthropology and Asian religions.
   </Feature>
 </a>
-<a href="/research" class="feature-link" aria-label="Go to Research page">
+<a href="{import.meta.env.BASE_URL}research" class="feature-link" aria-label="Go to Research page">
   <Feature class="academic-feature-card" icon="lucide:globe" title="Research" color="var(--brand-sage)">
     Research on Himalayan tribes, Tibetan diaspora, and new religiosity in India, Japan, and Vietnam.
   </Feature>
@@ -31,17 +31,17 @@ import { Accordion, AccordionItem } from 'accessible-astro-components'
     Major grant project: building the world’s largest open-access database on new religiosity.
   </Feature>
 </a>
-<a href="/services" class="feature-link" aria-label="Go to Editing & Consulting section">
+<a href="{import.meta.env.BASE_URL}services" class="feature-link" aria-label="Go to Editing & Consulting section">
   <Feature class="academic-feature-card" icon="lucide:edit-3" title="Editing & Consulting" color="var(--brand-sage)">
     Professional editing and consulting for academic publications, grants, and research projects.
   </Feature>
 </a>
-<a href="/publications" class="feature-link" aria-label="Go to Publications page">
+<a href="{import.meta.env.BASE_URL}publications" class="feature-link" aria-label="Go to Publications page">
   <Feature class="academic-feature-card" icon="lucide:file-text" title="Publications" color="var(--brand-sage)">
     Publications include peer-reviewed articles, book chapters, and public scholarship in religion.
   </Feature>
 </a>
-<a href="/services#grants" class="feature-link" aria-label="Go to Grants & Awards section in Services">
+<a href="{import.meta.env.BASE_URL}services#grants" class="feature-link" aria-label="Go to Grants & Awards section in Services">
   <Feature class="academic-feature-card" icon="lucide:award" title="Grants & Awards" color="var(--brand-sage)">
     Recipient of Fulbright, Templeton, and international awards for research and academic excellence.
   </Feature>
