@@ -1,21 +1,5 @@
 # Stephen Christopher Academia
 
-This is an accessible starter theme for Astro, tailored for academic, portfolio, or blog websites. It includes accessibility features and modern tooling (Astro, Tailwind CSS, MDX, SCSS, and more).
-
-## Features
-- Accessible components (WCAG, a11y)
-- MDX support
-- Tailwind CSS integration
-- SCSS support
-- Icon integration
-- HTML compression
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher recommended)
-- npm
-
 ### Installation
 ```bash
 npm install
