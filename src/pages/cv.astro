@@ -8,7 +8,10 @@ import { Accordion, AccordionItem } from 'accessible-astro-components';
   <main class="page-container">
   <div class="grid-2col">
     <div>
-      <h1 class="page-title">Full CV</h1>
+      <div class="cv-header">
+        <h1 class="page-title">Full CV</h1>
+        <img src="stephen-christopher.jpg" alt="Stephen Christopher portrait" class="cv-photo" />
+      </div>
     </div>
     <div class="cv-content">
     <Accordion>
@@ -201,4 +204,29 @@ import { Accordion, AccordionItem } from 'accessible-astro-components';
     text-align: center;
   }
 }
+.cv-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 2.8rem;
+}
+.cv-photo {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 1.2rem;
+  box-shadow: 0 1px 12px 0 rgba(60,60,60,0.08);
+  filter: grayscale(100%);
+  opacity: 0.88;
+  margin: 0;
+  display: block;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.cv-photo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 </style>

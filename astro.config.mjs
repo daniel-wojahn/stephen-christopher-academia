@@ -10,7 +10,7 @@ import path from 'path'
 export default defineConfig({
   compressHTML: true,
   site: 'https://daniel-wojahn.github.io/stephen-christopher-academia',
-  base: 'stephen-christopher-academia',
+  base: '/stephen-christopher-academia',
   integrations: [mdx(), icon(), compress()],
   vite: {
     css: {
